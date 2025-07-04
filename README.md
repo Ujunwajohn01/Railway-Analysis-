@@ -210,7 +210,7 @@ The following DAX Measures were created:
 
 **2. Most Popular Route Taken**
 
-![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Ticket%20Revenue%20by%20Station.png)
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Most%20Popular%20Route%20Taken.png)
 
 **Insight:** The most frequented route is Manchester Piccadilly → Liverpool Lime Street (4.6K journeys), followed by London Euston → Birmingham New Street (4.2K).
 
