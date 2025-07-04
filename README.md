@@ -2,22 +2,23 @@
 A Power BI Data Analytics Project by Obianujunwa John that analyzes real-world railway ticket sales.
 
 ### Table of Contents
-- Project Overview
-- Project Scope
-- Business Objectives
-- Expected Outcome
-- Use Case
-- Skills Demoonstrated
-- Data Source
-- Data Dictionary
-- Data Connection
-- Data Profiling 
-- Data Cleaning and Preparation
-- Key KPIs
-- Key Analysis & Insights
-- Recommendations
-- Conclusion
-- Contact
+- [Project Overview](#project-overview)  
+- [Project Scope](#project-scope)  
+- [Business Objectives](#business-objectives)  
+- [Expected Outcomes](#expected-outcomes)  
+- [Use Case](#use-case)  
+- [Skills Demonstrated](#skills-demonstrated)  
+- [Data Source](#data-source)  
+- [Data Dictionary](#data-dictionary)  
+- [Data Connection](#data-connection)  
+- [Data Profiling](#data-profiling)  
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)   
+- [Key KPIs](#key-kpis)  
+- [Key Analysis and Insights](#key-analysis-and-insights)   
+- [Recommendations](#recommendations)  
+- [Conclusion](#conclusion)  
+- [Contact](#contact)
+
 
 ### Project Overview
 This Power BI project analyzes railway ticket sales, passenger journey statuses, station performance, and time-based travel patterns using transactional data. The objective is to uncover performance trends across key train stations in the UK, optimize peak time planning, and understand how ticket types and station routes contribute to revenue.
@@ -63,12 +64,19 @@ Stakeholders who can benefit from this analysis include:
 - KPI Reporting
 
 ### Data Source
+
 **Source:** [Maven Analytics](https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&search=uk%20tra) dataset consisting of Mock train ticket data for National Rail in the UK, including details on the type of ticket, the date & time for each journey, the departure & arrival stations, the ticket price, and more.
+
 **File:** railway.csv
+
 **Type:** Flat file (CSV)
+
 **Tools Used:** Power BI
+
 **Rows:** 31,653
+
 **Columns:** Transatcion ID, Date of Purchase, Time of Purchase, Purchase Type, Purchase Method, Railcard, Ticket Type, Ticket Class, Price, Departure Station, Arrival Station, Date of Journey, Departure Time, Arrival Time, Journey Status, Reason for Delay, Refund Request
+
 **Created Column:** Month Name, Month No, Route, Departure Hour(12), Departure Hour(24)
 
 ### Data Dictionary
@@ -85,10 +93,12 @@ Stakeholders who can benefit from this analysis include:
 
 ### Data Connection
 The steps taken in data connection in Power BI include:
+
 **1. Open Power BI Desktop**
 - Launch Power BI Desktop on computer.
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Power%20Bi%20Desktop.png)
+
 
 **2. Get Data**
 - Click on the "Blank report" tab in the Power BI Desktop.
@@ -97,12 +107,14 @@ The steps taken in data connection in Power BI include:
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Get%20Data%20(Power%20BI).png)
 
+
 **3. Choose Text/CSV and Specify the File Location**
 - In the "Get Data" window, select "Text/CSV" as the data source.
 - Navigate to the location where the CSV file is stored.
 - Select the CSV file you would like to import and click "Open."
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/File%20Location.png)
+
 
 **4. Preview and Transform**
 - Select the tables to be inserted
@@ -142,8 +154,9 @@ Data profiling is the process of examining your dataset to understand its struct
 | Reason for Delay      | Text      | 8              | 27,481         | 86.82%      | Signal Failure, Technical Issue, ...   |
 | Refund Request        | Boolean    | 2              | 0              | 0.00%       | No, Yes                                 |
 
-### Data Cleaning & Preparation
+### Data Cleaning and Preparation
 Using Power Query Editor, the following data cleaning and preparation procedures were performed:
+
 **1. Created New Columns:** Some of the new columns that were added to the dataset include:
 - **Month Name:** This column was extracted from the "Date of Purchase" Column.
 
@@ -195,16 +208,16 @@ The following DAX Measures were created:
 - **Total Delayed Journeys:** 2,292
 - **Total Refund Requests:** 1,118
 
-### Key Analytics & Insights
+### Key Analysis and Insights
 **1.	 Ticket Revenue by Station**
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Ticket%20Revenue%20by%20Station.png)
 
-**Insight:** London Kings Cross generated the highest revenue (~$200K), followed by Liverpool Lime Street ($135K) and London Euston ($112K).
+- **Insight:** London Kings Cross generated the highest revenue (~$200K), followed by Liverpool Lime Street ($135K) and London Euston ($112K).
 
-**Problem:** Heavy revenue concentration in a few stations might indicate dependence on limited routes.
+- **Problem:** Heavy revenue concentration in a few stations might indicate dependence on limited routes.
 
-**Recommendation:** Diversify promotional efforts to boost underperforming stations. Consider additional services or offers from mid-tier stations to expand revenue base.
+- **Recommendation:** Diversify promotional efforts to boost underperforming stations. Consider additional services or offers from mid-tier stations to expand revenue base.
 
 
 
@@ -212,57 +225,57 @@ The following DAX Measures were created:
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Most%20Popular%20Route%20Taken.png)
 
-**Insight:** The most frequented route is Manchester Piccadilly → Liverpool Lime Street (4.6K journeys), followed by London Euston → Birmingham New Street (4.2K).
+- **Insight:** The most frequented route is Manchester Piccadilly → Liverpool Lime Street (4.6K journeys), followed by London Euston → Birmingham New Street (4.2K).
 
-**Problem:** High demand routes may face congestion, reduced service quality, or maintenance strain.
+- **Problem:** High demand routes may face congestion, reduced service quality, or maintenance strain.
 
-**Recommendation:** Prioritize infrastructure, train capacity, and service frequency on top routes. Introduce loyalty or dynamic pricing strategies to manage load.
+- **Recommendation:** Prioritize infrastructure, train capacity, and service frequency on top routes. Introduce loyalty or dynamic pricing strategies to manage load.
 
 **3. Total Revenue by Ticket Types**
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Total%20Revenue%20by%20Ticket%20Type.png)
 
-**Insight:**
+- **Insight:**
 •	Advance tickets generated the highest revenue.
 •	Off-Peak tickets sold in high volume, but at lower average prices.
 •	Anytime tickets provided a balanced contribution.
 
-**Problem:** While Advance tickets are profitable, dependence on pre-booking might limit spontaneous travelers.
+- **Problem:** While Advance tickets are profitable, dependence on pre-booking might limit spontaneous travelers.
 
-**Recommendation:** Enhance pricing strategies by balancing promotions across all ticket types. Consider limited-time discounts for Off-Peak and Anytime options to drive volume.
+- **Recommendation:** Enhance pricing strategies by balancing promotions across all ticket types. Consider limited-time discounts for Off-Peak and Anytime options to drive volume.
 
 **4. Monthly Ticket Purchase Trends**
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Monthly%20Ticket%20Purchase.png)
 
-**Insight:** January led in ticket sales (205K), followed by March (195K) and April (187K). A sharp drop in December (1K) could be due to holiday season, data cutoff, or reduced services.
+- **Insight:** January led in ticket sales (205K), followed by March (195K) and April (187K). A sharp drop in December (1K) could be due to holiday season, data cutoff, or reduced services.
 
-**Problem:** Seasonality affects revenue forecasting and staffing.
+- **Problem:** Seasonality affects revenue forecasting and staffing.
 
-**Recommendation:** Prepare flexible staffing and marketing for peak months. Investigate December’s dip—if due to reduced services, ensure communication to minimize customer dissatisfaction.
+- **Recommendation:** Prepare flexible staffing and marketing for peak months. Investigate December’s dip—if due to reduced services, ensure communication to minimize customer dissatisfaction.
 
 **5. Journey Status Breakdown**
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Passenger's%20Journey%20Status.png)
 
-**Insight:** 86.82% of journeys were on time, while 7.24% were cancelled and 5.94% were delayed.
+- **Insight:** 86.82% of journeys were on time, while 7.24% were cancelled and 5.94% were delayed.
 
-**Problem:** Nearly 13% of journeys experienced disruption—this affects trust and can trigger refund claims or negative feedback.
+- **Problem:** Nearly 13% of journeys experienced disruption—this affects trust and can trigger refund claims or negative feedback.
 
-**Recommendation:** Investigate delay and cancellation causes. Implement predictive maintenance, improve scheduling, and boost transparency via real-time updates.
+- **Recommendation:** Investigate delay and cancellation causes. Implement predictive maintenance, improve scheduling, and boost transparency via real-time updates.
 
 **6. Peak Travel Hours**
 
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Peak%20Travel%20Times.png)
 
-**Insight:**
+- **Insight:**
 
 - Highest ridership occurs at 06:00, 07:00, 17:00, and 18:00, with 3K+ passengers each.
 - Lowest traffic appears between 11:00–15:00.
 
-**Problem:** Uneven distribution of passengers causes overcrowding and resource underutilization.
+- **Problem:** Uneven distribution of passengers causes overcrowding and resource underutilization.
 
-**Recommendation:** Promote off-peak travel with discounted fares or flexible ticketing. Increase train frequency or seating during peak hours to maintain comfort and punctuality.
+- **Recommendation:** Promote off-peak travel with discounted fares or flexible ticketing. Increase train frequency or seating during peak hours to maintain comfort and punctuality.
 
 ### Data Visualization
 
@@ -271,6 +284,7 @@ The following DAX Measures were created:
 ![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Full%20Dashboard.png)
 
 ### Recommendations
+
 **1. Focus on High-Performing Stations:**
 Prioritize services and staffing at London Kings Cross, Liverpool Lime Street, and London Euston.
 
@@ -294,13 +308,13 @@ This railway station analysis provides a comprehensive look at station revenue, 
 
 ### Contact
 
-Obianujunwa Vivian John
+**Name:** Obianujunwa Vivian John
 
-ujunwajohn01@gmail.com
+**Email:** ujunwajohn01@gmail.com
 
-Lagos, Nigeria
+**Location:** Lagos, Nigeria
 
-Role Target: Data Analyst (Transport, Logistics, or Tech-focused organizations)
+**Role Target:** Data Analyst 
 
 ### THANK YOU!
 
