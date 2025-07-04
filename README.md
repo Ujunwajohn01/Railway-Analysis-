@@ -88,21 +88,29 @@ The steps taken in data connection in Power BI include:
 **1. Open Power BI Desktop**
 - Launch Power BI Desktop on computer.
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Power%20Bi%20Desktop.png)
+
 **2. Get Data**
 - Click on the "Blank report" tab in the Power BI Desktop.
 - Click on the "Home" tab in the Power BI Desktop.
 - Select "Get Data" to initiate the data import process
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Get%20Data%20(Power%20BI).png)
 
 **3. Choose Text/CSV and Specify the File Location**
 - In the "Get Data" window, select "Text/CSV" as the data source.
 - Navigate to the location where the CSV file is stored.
 - Select the CSV file you would like to import and click "Open."
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/File%20Location.png)
+
 **4. Preview and Transform**
 - Select the tables to be inserted
 - Power BI displays a preview of the data from the CSV file.
 - Review the data to ensure it is displayed correctly.
 - Click on transform data.
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Power%20Query.png)
 
 ### Data Profiling
 Data profiling is the process of examining your dataset to understand its structure, quality, and integrity before performing analysis. It's an essential first step in any data project. Here’s the data profiling summary for my Railway Station Analysis based on the railway.csv file and the dashboard visuals:
@@ -190,6 +198,8 @@ The following DAX Measures were created:
 ### Key Analytics & Insights
 **1.	 Ticket Revenue by Station**
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Ticket%20Revenue%20by%20Station.png)
+
 **Insight:** London Kings Cross generated the highest revenue (~$200K), followed by Liverpool Lime Street ($135K) and London Euston ($112K).
 
 **Problem:** Heavy revenue concentration in a few stations might indicate dependence on limited routes.
@@ -200,6 +210,8 @@ The following DAX Measures were created:
 
 **2. Most Popular Route Taken**
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Ticket%20Revenue%20by%20Station.png)
+
 **Insight:** The most frequented route is Manchester Piccadilly → Liverpool Lime Street (4.6K journeys), followed by London Euston → Birmingham New Street (4.2K).
 
 **Problem:** High demand routes may face congestion, reduced service quality, or maintenance strain.
@@ -207,6 +219,8 @@ The following DAX Measures were created:
 **Recommendation:** Prioritize infrastructure, train capacity, and service frequency on top routes. Introduce loyalty or dynamic pricing strategies to manage load.
 
 **3. Total Revenue by Ticket Types**
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Total%20Revenue%20by%20Ticket%20Type.png)
 
 **Insight:**
 •	Advance tickets generated the highest revenue.
@@ -219,6 +233,8 @@ The following DAX Measures were created:
 
 **4. Monthly Ticket Purchase Trends**
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Monthly%20Ticket%20Purchase.png)
+
 **Insight:** January led in ticket sales (205K), followed by March (195K) and April (187K). A sharp drop in December (1K) could be due to holiday season, data cutoff, or reduced services.
 
 **Problem:** Seasonality affects revenue forecasting and staffing.
@@ -227,6 +243,8 @@ The following DAX Measures were created:
 
 **5. Journey Status Breakdown**
 
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Passenger's%20Journey%20Status.png)
+
 **Insight:** 86.82% of journeys were on time, while 7.24% were cancelled and 5.94% were delayed.
 
 **Problem:** Nearly 13% of journeys experienced disruption—this affects trust and can trigger refund claims or negative feedback.
@@ -234,6 +252,8 @@ The following DAX Measures were created:
 **Recommendation:** Investigate delay and cancellation causes. Implement predictive maintenance, improve scheduling, and boost transparency via real-time updates.
 
 **6. Peak Travel Hours**
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Peak%20Travel%20Times.png)
 
 **Insight:**
 
@@ -245,6 +265,10 @@ The following DAX Measures were created:
 **Recommendation:** Promote off-peak travel with discounted fares or flexible ticketing. Increase train frequency or seating during peak hours to maintain comfort and punctuality.
 
 ### Data Visualization
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Railway%20KPIs.png)
+
+![](https://github.com/Ujunwajohn01/Railway-Analysis-/blob/main/Full%20Dashboard.png)
 
 ### Recommendations
 **1. Focus on High-Performing Stations:**
